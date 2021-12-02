@@ -134,18 +134,15 @@ reg     [ 31: 0] readdata;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
+        begin
           d1_data_in <= 0;
-      else if (clk_en)
-          d1_data_in <= data_in;
-    end
-
-
-  always @(posedge clk or negedge reset_n)
-    begin
-      if (reset_n == 0)
           d2_data_in <= 0;
+        end
       else if (clk_en)
+        begin
+          d1_data_in <= data_in;
           d2_data_in <= d1_data_in;
+        end
     end
 
 

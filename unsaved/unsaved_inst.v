@@ -23,7 +23,6 @@
 		.sdram_dqm                                              (<connected-to-sdram_dqm>),                                              //                                           .dqm
 		.sdram_ras_n                                            (<connected-to-sdram_ras_n>),                                            //                                           .ras_n
 		.sdram_we_n                                             (<connected-to-sdram_we_n>),                                             //                                           .we_n
-		.switches_external_connection_export                    (<connected-to-switches_external_connection_export>),                    //               switches_external_connection.export
-		.nios2_b_ring_oscillator_0_conduit_export_export_data   (<connected-to-nios2_b_ring_oscillator_0_conduit_export_export_data>)    //   nios2_b_ring_oscillator_0_conduit_export.export_data
+		.switches_external_connection_export                    (<connected-to-switches_external_connection_export>)                     //               switches_external_connection.export
 	);
 

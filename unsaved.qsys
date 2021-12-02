@@ -117,14 +117,10 @@
    dir="end" />
  <interface
    name="nios2_b_ring_oscillator_0_conduit_export"
-   internal="Nios2_B.ring_oscillator_0_conduit_export"
-   type="conduit"
-   dir="end" />
+   internal="Nios2_B.ring_oscillator_0_conduit_export" />
  <interface
    name="nios_sys_sdram_pll_0_sdram_clk"
-   internal="Nios2_A.sys_sdram_pll_0_sdram_clk"
-   type="clock"
-   dir="start" />
+   internal="Nios2_A.sys_sdram_pll_0_sdram_clk" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface name="sdram" internal="Nios2_A.sdram_wire" type="conduit" dir="end" />
  <interface
@@ -152,26 +148,26 @@
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_UNIQUE_ID" value="unsaved_Nios2_B" />
  </module>
- <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
+ <module name="clk_0" kind="clock_source" version="16.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <connection kind="clock" version="20.1" start="clk_0.clk" end="Nios2_B.clk" />
+ <connection kind="clock" version="16.1" start="clk_0.clk" end="Nios2_B.clk" />
  <connection
    kind="clock"
-   version="20.1"
+   version="16.1"
    start="clk_0.clk"
    end="Nios2_A.clk_0_clk_in" />
  <connection
    kind="reset"
-   version="20.1"
+   version="16.1"
    start="clk_0.clk_reset"
    end="Nios2_A.clk_0_clk_in_reset" />
  <connection
    kind="reset"
-   version="20.1"
+   version="16.1"
    start="clk_0.clk_reset"
    end="Nios2_B.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

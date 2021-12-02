@@ -75,10 +75,8 @@ output reg [31:0] AES_EXPORT_DATA;
         .sdram_ras_n                         (DRAM_RAS_N),                         //                               .ras_n
         .sdram_we_n                          (DRAM_WE_N),                          //                               .we_n
         .key_external_connection_export      (KEYS),      //        key_external_connection.export
-		  .nios_sys_sdram_pll_0_sdram_clk_clk  (DRAM_CLK),  // nios_sys_sdram_pll_0_sdram_clk.clk
         .clk_clk                             (CLOCK_50),     
-		  .nios2_a_avalon_aes_interface_0_export_data_export_data (POOP),  // nios2_a_avalon_aes_interface_0_export_data.export_data
-		  .nios2_b_ring_oscillator_0_conduit_export_export_data   (AES_EXPORT_DATA)   //   nios2_b_ring_oscillator_0_conduit_export.export_data
+		  .nios2_a_avalon_aes_interface_0_export_data_export_data (POOP)  // nios2_a_avalon_aes_interface_0_export_data.export_data
 
 
 	

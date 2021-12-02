@@ -12,7 +12,7 @@ module unsaved (
 	key_external_connection_export,
 	ledg_export,
 	ledr_export,
-	nios_sys_sdram_pll_0_sdram_clk_clk,
+	nios2_a_avalon_aes_interface_0_export_data_export_data,
 	reset_reset_n,
 	sdram_addr,
 	sdram_ba,
@@ -37,7 +37,7 @@ module unsaved (
 	input	[3:0]	key_external_connection_export;
 	output	[7:0]	ledg_export;
 	output	[17:0]	ledr_export;
-	output		nios_sys_sdram_pll_0_sdram_clk_clk;
+	output	[31:0]	nios2_a_avalon_aes_interface_0_export_data_export_data;
 	input		reset_reset_n;
 	output	[12:0]	sdram_addr;
 	output	[1:0]	sdram_ba;

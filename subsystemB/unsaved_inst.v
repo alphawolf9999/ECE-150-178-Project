@@ -12,8 +12,6 @@
 		.ledg_export                                            (<connected-to-ledg_export>),                                            //                                       ledg.export
 		.ledr_export                                            (<connected-to-ledr_export>),                                            //                                       ledr.export
 		.nios2_a_avalon_aes_interface_0_export_data_export_data (<connected-to-nios2_a_avalon_aes_interface_0_export_data_export_data>), // nios2_a_avalon_aes_interface_0_export_data.export_data
-		.nios2_b_ring_oscillator_0_conduit_export_export_data   (<connected-to-nios2_b_ring_oscillator_0_conduit_export_export_data>),   //   nios2_b_ring_oscillator_0_conduit_export.export_data
-		.nios_sys_sdram_pll_0_sdram_clk_clk                     (<connected-to-nios_sys_sdram_pll_0_sdram_clk_clk>),                     //             nios_sys_sdram_pll_0_sdram_clk.clk
 		.reset_reset_n                                          (<connected-to-reset_reset_n>),                                          //                                      reset.reset_n
 		.sdram_addr                                             (<connected-to-sdram_addr>),                                             //                                      sdram.addr
 		.sdram_ba                                               (<connected-to-sdram_ba>),                                               //                                           .ba
